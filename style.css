@@ -61,6 +61,80 @@ a {
         float: left;
     }
 }
+/* MENUS BOTTOM */
+.main-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0 40px;
+}
+ul.main-menu > li {
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    padding: 7px 7px 7px 0;
+} 
+.main-menu li a .icon {
+    float: left;
+}
+.main-menu li a .icon img {
+    width: 25px;
+}
+/* BANNER */
+/*BLOCK 02 */
+.bg-block-02 {
+    background-image: url('./images/bg-block-02.png');
+}
+.gird-block-02 {
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
+    padding: 10px; 
+}
+.gird-block-02 .icon, .gird-block-02 .gird-item-content .stt {
+    float: left;
+}
+.gird-item {
+    background-color: f4f4f4;
+    border-radius: 10px;
+}
+.gird-item .icon img {
+    padding: 25px;
+    max-width: 100px;
+}
+/* YẾN CHƯNG SẴN */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 10px; 
+}
+.grid .grid__item {
+    text-align: center;
+}
+.grid .grid__item:nth-child(1) {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}
+.grid .grid__item:nth-child(2) {
+    grid-column: 3 / 5;
+}
+.grid .grid__item img {
+    border-radius: 10px;
+}
+.grid .grid__item:nth-child(2) img {
+    max-height: 320px;
+    width: 100%;
+}
+.grid .grid__item:nth-child(3) img {
+    max-height: 200px;
+    width: 100%;
+}
+.grid .grid__item:nth-child(4) img {
+    max-height: 186px;
+    width: 100%;
+}
 /* CÂU HỎI THƯỜNG GẶP */
 .section-cau-hoi-thuong-gap {
     background-image: url(./images/bg-cau-hoi-thuong-gap.png);
