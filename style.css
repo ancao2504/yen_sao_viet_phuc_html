@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: auto;
+    font-family: 'Roboto', sans-serif;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+@media (min-width: 1200px) {
+    .container-wrapper {
+        width: 1600px;
+        margin: 0 auto;
+    }
+}
+
+/* FIVE COLUMN */
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+/* CÂU HỎI THƯỜNG GẶP */
+.section-cau-hoi-thuong-gap {
+    background-image: url(./images/bg-cau-hoi-thuong-gap.png);
+            background-position: 50% 50%; 
+}
+.question-and-anwser {
+    padding-bottom: 15px;
+}
+.question-and-anwser .question {
+    background-color: #896128;
+    padding: 10px;
+    border-radius: 5px;
+}
+.icon-question {
+    float: left;
+    padding-right: 15px;
+}
+.text-question {
+    color: #fff;
+}
+.icon-question img {
+    width: 25px;
+}
+.anwser {
+    background: #e9e9e9;
+}
+.anwser .text-anwser {
+    padding: 15px;
+}
+.list-picture-value {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 15px;
+}
+.list-item {
+    position: relative;
+}
+.text-content {
+    position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: #fff;
+}
+.box-image img {
+    height: 270px;
+    border-radius: 10px;
+}
+.list-item:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgb(60 40 70);
+    opacity: 0.25;
+    z-index: 1;
+}
+/* CAM KẾT THƯƠNG HIỆU */
+.section-camketthuonghieu {
+    background-image: linear-gradient(
+        0deg, rgb(129 90 35), rgba(0,0,0,0.45)), url(./images/cam-ket-thuong-hieu.png);
+            background-position: 50% 50%;
+}
+
+/* GIẢI THƯỞNG */
+@media (min-width: 1290px) {
+    .logo-grid__col {
+        width: 20%;
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+}
+.f {
+    display: -webkit-flex;
+    display: flex;
+}
+.fw {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.jcc {
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.logo-grid__col img {
+    height: 250px;
+    object-fit: cover;
+}
+.logo-grid__image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: all .3s;
+}
+.logo-grid__image {
+    position: relative;
+}
+/* HOEM CONTACT */
+.section-info-contact {
+    
+    background-image: linear-gradient(
+0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(./images/home-contact.png);
+    background-position: 50% 50%;
+}
+
+
+/* FOOTER BOTTOM */
+.section-info-general .row {
+    padding: 0 0 40px 70px;
+}
+
+/* FOOTER */
+.footer-main .footer-line-top {
+    border-top: 1px solid #000;
+}
+.footer-main .row {
+    padding: 0 30px;
+}
+.footer-logo img, .footer-mt-50 {
+    margin-top: 50px;
+}
+h3.footer-title {
+    font-size: 20px;
+}
+.icon-socials-us .icon-socials-connect {
+    float: left;
+    margin-right: 10px;
+}
+.icon-socials-us .icon-socials-us__youtube, .icon-socials-us .icon-socials-us__mail {
+    margin-top: 10px;
+}
+.icon-socials-us  .icon-socials-us__ins {
+    float: none;
+}
+.icon-soical-zalo-flow img {
+    width: 100px;
+    width: 140px;
+}
+.all-logo-payments .logo-payments {
+    float: left;
+}
+.all-logo-payments .payments__icon-jcb {
+    float: none;
+}
+.all-logo-payments .payments__icon-visa-mastercard img {
+    width: 165px;
+    margin-right: 15px;
+}
+.payments__money img {
+    width: 90px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+.text-info-promotion {
+    font-size: 13px;
+}
+.icon-socials-us img {
+    width: 50px;
+}
